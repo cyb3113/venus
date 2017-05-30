@@ -14,23 +14,22 @@
   <link rel="stylesheet" href="bibliotecas/animate.css">
   </head>
   <body>
-      
+
     <a-scene>
       <a-assets>
         <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
-        <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+        <!-- <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous"> -->
         <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
         <img id="sky" src="https://ucarecdn.com/dc78eb5f-254d-4376-8374-ff02c428c2de/" crossorigin="anonymous" />
+        <img id="vid" src="https://ucarecdn.com/857b109b-eb4b-4231-b30c-33c84030eb4a/" crossorigin="anonymous" />
+        <a-sound id="music" src="https://ucarecdn.com/fcbeec75-6703-4c54-9f8f-51c752fe65f4/"crossorigin="anonymous" />
+
         <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
         <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
         <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
       </a-assets>
 
-      <a-entity scale="2 2 2" geometry="primitive: sphere" position="1.311 6.347 -6.615" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
-        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
-      </a-entity>
-
-      <a-entity position="-3 1 -6" rotation="5 0 0">
+        <a-entity position="-3 1 -6" rotation="5 0 0">
         <a-entity
           rotation="0 0 5"
           position="0 2 0.2"
@@ -38,40 +37,28 @@
           material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
         ></a-entity>
 
-        <a-entity position="-3.730 -0.260 -6.000" scale="1.140 1.440 0.300" text-geometry="value: V Ê N U S  E M  C Ó D I G O S; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
 
-       <!--  <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
-                  material="shader: flat; color: white"></a-entity> -->
-     <!--    <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"
-                  material="shader: flat; color: white; transparent: true; opacity: 0.4"></a-entity>
-      </a-entity> -->
+          <a-entity position="-12.397 -1.045 -5.619" scale="1.210 2.680 0.680" text-geometry="value: V Ê N U S  E M  C Ó D I G O S; font: #exoFont; bevelEnabled: true; bevelSize: 0.19; bevelThickness: 1.0500000000000003; curveSegments: 0.5; size: 1.5; style: italics, height: 0.5;" material="color:#ff3399;side: double; metalness:1.000; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
 
-      <!-- <a-entity
-        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity> -->
 
-      <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
-      <a-entity light="color: ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
-      <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
-      <a-entity light="color: white; type: ambient;"></a-entity>
-
-      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+          <a-sky src="#sky" rotation="0 -78.330 0"> </a-sky>
+          <a-sound src="#music" autoplay="true" loop="tru" position="0 2 5"></a-sound>
     </a-scene>
-    <a href="home.html" target="_blank" class="gotoSite" style="
+
+    <a class="animated infinite tada" href="home.html" target="_blank" class="gotoSite" style="
     position: absolute;
     bottom: 0;
     right: 0;
     margin-right: 10%;
-    margin-bottom: 25px;
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
     color: #1a0033;
     text-decoration: none;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 900;
-    font-size: 30px;
-
-    background: rgba(102, 0, 204, 0.5);
-" aframe-injected target="_blank">ENTRE NO SITE!</a>
+    font-size: 20px;
+    background: rgba(255,51,153, 0.8);
+    "aframe-injected target="_blank">ENTRE!</a>
 
 </body>
 </html>
