@@ -1,4 +1,6 @@
 # venus
-final project for the bootcamp {Reprograma}/2017
-My first attempt to code a website using web-vr (a-frame)
+https://cyb3113.github.io/venus/venus
+
+Final project for the bootcamp {Reprograma}/2017
+My first attempt to code a website and use web-vr (a-frame)
 
