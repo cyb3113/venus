@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <title>Vênus em Códigos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="bibliotecas/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bibliotecas/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/javascript" href="bibliotecas/bootstrap.minm.js">
+  <link rel="stylesheet" type="text/javascript" href="bibliotecas/jquery-3.2.1.js">
+  <link rel="stylesheet" href="bibliotecas/animate.css">
+  </head>
+  <body>
+
+    <a-scene>
+      <a-assets>
+        <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+        <!-- <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous"> -->
+        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+        <img id="sky" src="https://ucarecdn.com/dc78eb5f-254d-4376-8374-ff02c428c2de/" crossorigin="anonymous" />
+        <img id="vid" src="https://ucarecdn.com/857b109b-eb4b-4231-b30c-33c84030eb4a/" crossorigin="anonymous" />
+        <a-sound id="music" src="https://ucarecdn.com/fcbeec75-6703-4c54-9f8f-51c752fe65f4/"crossorigin="anonymous" />
+
+        <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
+        <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+        <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+      </a-assets>
+
+        <a-entity position="-3 1 -6" rotation="5 0 0">
+        <a-entity
+          rotation="0 0 5"
+          position="0 2 0.2"
+          text-geometry="; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
+          material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
+        ></a-entity>
+
+
+          <a-entity position="-12.397 -1.045 -5.619" scale="1.210 2.680 0.680" text-geometry="value: V Ê N U S  E M  C Ó D I G O S; font: #exoFont; bevelEnabled: true; bevelSize: 0.19; bevelThickness: 1.0500000000000003; curveSegments: 0.5; size: 1.5; style: italics, height: 0.5;" material="color:#ff3399;side: double; metalness:1.000; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+
+
+          <a-sky src="#sky" rotation="0 -78.330 0"> </a-sky>
+          <a-sound src="#music" autoplay="true" loop="tru" position="0 2 5"></a-sound>
+    </a-scene>
+
+    <a class="animated infinite tada" href="home.html" target="_blank" class="gotoSite" style="
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: #1a0033;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 900;
+    font-size: 20px;
+    background: rgba(255,51,153, 0.8);
+    "aframe-injected target="_blank">ENTRE!</a>
+
+</body>
+</html>
